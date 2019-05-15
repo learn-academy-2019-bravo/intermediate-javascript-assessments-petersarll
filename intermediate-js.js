@@ -4,11 +4,10 @@
 
 var originalArray = [1, 2, 3, 4, 5, 6, 7]
 
-arrowFunction = () => {
-	console.log(originalArray.reverse());
+arrowFunction = (arr) => {
+	return arr.reverse();
 }
-
-arrowFunction()
+console.log(arrowFunction(originalArray));
 
 // 2. Given the object below, complete the console.log to find specific information:
 
@@ -36,14 +35,13 @@ console.log(bicycle.wheels.specs[2])
 
 var ourString = "Hello Learn Students!"
 
-function myFunction() {
-  var ourString = "Hello Learn Students!"
+function letterCounter(string) {
   var howmanyL = /l/gi;
   var result = ourString.match(howmanyL).length
-  console.log(result);
+  return result
 }
 
-myFunction()
+console.log(letterCounter(ourString))
 
 
 // 4. Write a function called getFib that returns the first 10 numbers
